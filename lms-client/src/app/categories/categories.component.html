@@ -1,0 +1,31 @@
+<section class="categories p-3 mt-5">
+
+    <!-- CATEGORIES FOR MOBILE -->
+    <div class="container d-block d-md-none" >
+        <h1 class="fw-semibold fs-2">Top Categories</h1>
+        <div >
+            <span *ngFor="let i= index; let item of categories" (click)="goToCategory(item.name)">
+                <button mat-button style="border: 1px solid orangered; border-radius: 30px; margin: 3px 5px 5px 0;">
+                   {{item.name}}
+                </button>
+            </span>
+        </div>
+    </div>
+
+
+    <!-- CATEGORIES DIV FOR PC -->
+    <div class="container d-none d-md-block">
+        <h1 class="fw-semibold fs-2">Top Categories</h1>
+
+        <!-- CATEGORIES 1ST ROW -->
+        <div class="row">
+            <div class="col-12 col-md-3" *ngFor="let i= index; let item of categories" (click)="goToCategory(item.name)">
+                <!-- <a routerLink="/categories/design"></a> -->
+                <div class="card hover position-relative"  >
+                    <img src={{item.image}} class="position-absolute top-50 start-50 translate-middle card-image" alt="...">
+                </div>
+                <p class="pt-2 fs-5 fw-semibold">{{item.name}}</p>
+            </div>
+        </div>
+    </div>
+</section>

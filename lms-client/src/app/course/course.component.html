@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+<header>
+    <div class="intro_wrapper">
+        <div class="container">
+            <div class="row">
+                 <div class="col-sm-12 col-md-8 col-lg-8">
+                    <div class="intro_text">
+                        <h1 class="naming">Courses Page</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header> <br> <br> <br> <br> <br>
+
+<section class="popular_courses" id="popular_courses_page">
+
+<div class="container">
+
+<div class="row col-md-d-flex">
+    <div class="col-md-3 card mx-3 mb-2" *ngFor="let course of allCourses">
+        <div class=" text-dark mt-2" >
+            <img src={{course.coverImage}} class="card-img-top" style="height: 145px; object-fit: cover;"/>
+            <div class="free">150$</div><br>
+
+                <div class="title card">
+                    <h4>{{course.courseName}}</h4>
+                    <h6>Teacher - <a href="">Janet Oduleke</a> </h6>
+                    <div id="icon">
+
+                        <img id="calendicon" src="/assets/images/logos/Planner_48px.png" alt="">
+                        <a id="popular-content"> 180 Days</a>
+                        <button id="cart" class="btn btn-sm" (click)="addToCart(course)">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+</div>
+</div>
+
+
+</section> <br> <br>
+
+<app-footer></app-footer>

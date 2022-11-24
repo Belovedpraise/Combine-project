@@ -1,0 +1,38 @@
+.form-control {
+    outline: 0 !important;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    outline: 0 !important;
+    box-shadow: none;
+}
+
+.grid-container {
+    margin-top: 200px;
+}
+
+.image-col {
+    background-image: url(/assets/images/banner/counter_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.register-h1 {
+    font-size: 35px !important;
+    color: rgb(14, 26, 87);
+    font-weight: 600;
+}
+
+.register-btn {
+    background-color: rgb(255,90,44);
+}
+
+.inp-label {
+    color: rgb(14, 26, 87);
+}
+
+.register-btn:disabled, .register-btn[disabled] {
+    background-color: rgb(252, 146, 107);
+    cursor: no-drop;
+}

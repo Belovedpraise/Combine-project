@@ -1,0 +1,37 @@
+
+<ng-container *ngIf="true">
+  <mat-progress-bar mode="indeterminate" *ngIf="loading" class="d-none d-md-block" style="width: 649px; margin-left: -12px; height: 3px;"></mat-progress-bar>
+  <mat-progress-bar mode="indeterminate" *ngIf="loading" class="d-block d-md-none" style="width: 412px; margin-left: -12px; height: 3px;"></mat-progress-bar>
+  <div class="card-table">
+  <div class="container card my-2 d-flex" *ngFor="let i=index; let carts of cart" style="margin-top: 100px;">
+      <div class="card-enroll">
+  <table class="table table-responsible">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>course name</th>
+      <th>course image</th>
+      <th>free_paid</th>
+    </tr>
+
+    <tr>
+      <td>{{carts.courseName}}</td>
+      <td>{{carts.free_paid}}</td>
+      <td>
+      <div>
+        <img src={{carts.coverImage}} alt="" style="object-fit: cover; height: 100px;">
+      </div>
+    </td>
+      <td>
+        <button class="btn btn-danger" (click)="addRemove(carts._id)">Remove</button>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+  </table>
+      </div>
+    </div>
+  </div>
+</ng-container>
+

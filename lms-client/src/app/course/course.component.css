@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  header{
+      background-image: url(/assets/images/banner/inner_banner_4.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+      /* background-image: url(/assets/images/banner/banner_3.png); */
+  }
+  /* <!-- beginin of popular courses one */
+
+.naming{
+    margin: 25% 0 0 0;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.card{
+    outline: none;
+    border: none;
+}
+
+#popular-content{
+    font-size: 12px;
+    color: rgb(149, 148, 147);
+    text-align: center;
+}
+
+
+.title{
+    margin-left: 20px;
+
+}
+
+.title h4{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.title h6{
+    font-size: 12px;
+    color: rgb(149, 148, 147);
+}
+
+.title a{
+    color:  rgb(9,42,206);
+    text-decoration: none;
+}
+
+.title a:hover{
+    color: rgb(255,90,44) ;
+}
+
+#icon{
+    position: relative;
+}
+
+#calendicon{
+    height: 13px;
+    width: 13px;
+}
+
+.free{
+    background-color: rgb(9,42,206);
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    float: right;
+    margin: 51% 0 0 70%;
+    margin-top: -30px;
+
+}
+
+#cart{
+    background-color: rgb(255,90,44);
+    color: white;
+    outline: none;
+    border: none;
+    float: right;
+}
+
+#cart:hover{
+    background-color: rgb(9,42,206);
+    transition: all 0.5s 0s;
+}
+
+/* end popular courses */
+
+@media only screen and (max-width: 500px){
+
+    /* beginin of popular courses */
+
+.free{
+    background-color: rgb(9,42,206);
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    float: right;
+    margin: 52.5% 0 0 70%;
+
+}
+
+/* end of popular courses */
+
+}

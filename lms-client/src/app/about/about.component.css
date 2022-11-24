@@ -1,0 +1,950 @@
+.intro_wrapper {
+    width: 100%;
+    background-image: url(/assets/images/banner/inner_banner_1.jpg);
+    height: 500px;
+}
+
+.intro_text h1{
+    font-size: 40px;
+    font-weight: bold;
+   margin: 25% 0 0 0;
+   text-align: center;
+   color: aliceblue;
+}
+
+/* beginin of about us */
+.about_us {
+    position: relative;
+    padding: 120px 0 0; 
+}
+
+    .about_us .about_title {
+      text-align: left;
+      padding: 100px 0 0; 
+    }
+
+      .about_us .about_title span {
+        position: relative;
+        padding-left: 110px;
+        font-size: 16px;
+        font-family: "Rubik", sans-serif;
+        color: #6a7a83; 
+    }
+        .about_us .about_title span:before {
+          position: absolute;
+          content: "";
+          height: 4px;
+          width: 70px;
+          left: 0;
+          top: 10px;
+          background: #ff5a2c; 
+    }
+
+    .about_us .about_title h2 {
+        color: #333146;
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 65px;
+        margin-bottom: 0px;
+        padding-top: 15px;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 2px; 
+    }
+
+    .about_us .banner_about {
+      padding-left: 8%; 
+    }
+      .about_us .banner_about img {
+        width: 100%;
+        position: relative;
+        z-index: 2; 
+    }
+
+    .about_us .about_content_wrapper {
+      margin-top: -100px; 
+    }
+
+      .about_us .about_content_wrapper .about_banner_down {
+        padding: 0 80px; 
+    }
+
+      .about_us .about_content_wrapper .about_content {
+        padding-top: 200px; 
+    }
+
+        .about_us .about_content_wrapper .about_content p {
+          padding-bottom: 20px;
+          margin: 0; 
+        }
+
+        .about_us .about_content_wrapper .about_content a {
+          color: #333146;
+          position: relative;
+          z-index: 1;
+          font-weight: 500;
+          font-family: "Rubik", sans-serif; 
+        }
+
+          .about_us .about_content_wrapper .about_content a:before {
+            position: absolute;
+            content: "";
+            height: 5px;
+            width: 100%;
+            left: 0;
+            bottom: 2px;
+            background: #ff5a2c;
+            opacity: 0.3;
+            z-index: -1;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+         }
+
+          .about_us .about_content_wrapper .about_content a i {
+            position: absolute;
+            top: 2px;
+            right: -30px;
+            visibility: visible;
+            opacity: 1;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            font-size: 16px; 
+        }
+
+          .about_us .about_content_wrapper .about_content a:hover:before {
+            height: 13px;
+         
+        }
+          .about_us .about_content_wrapper .about_content a:hover i {
+            right: -40px;
+            opacity: 0;
+            visibility: hidden;
+         }
+
+/* end of about us */
+
+/* beginin of possibility */
+#about_unlimited_possibilities .single_item {
+    margin-bottom: 50px; 
+}
+
+  #about_unlimited_possibilities .item_6 {
+    border-radius: 0px 40px 0px 40px; 
+}
+
+    #about_unlimited_possibilities .item_6:before {
+      right: 0;
+      left: auto;
+      background: #ff5a2c; 
+    }
+
+    #about_unlimited_possibilities .item_6 .icon_wrapper i:before {
+      color: #ff5a2c;
+     }
+
+      .unlimited_possibilities {
+        padding: 0;
+        margin: 130px 0; 
+    }
+
+        .unlimited_possibilities .single_item_first, .unlimited_possibilities .single_item_last {
+          border-radius: 40px 0px 40px 0px; 
+        }
+
+          .unlimited_possibilities .single_item_first:before, .unlimited_possibilities .single_item_last:before {
+            height: 2px;
+            width: 90%;
+            left: 0;
+            background: #092ace;
+            bottom: 0; 
+        }
+
+        .unlimited_possibilities .single_item_center {
+          border-radius: 0 40px 0px 40px; 
+        }
+
+          .unlimited_possibilities .single_item_center:before {
+            height: 2px;
+            bottom: 0px;
+            width: 90%;
+            right: 0px;
+            background: #ff5a2c; 
+        }
+
+          .unlimited_possibilities .single_item_center .icon_wrapper i:before {
+            color: #ff5a2c !important; 
+        }
+
+        .unlimited_possibilities .single_item {
+          -webkit-box-shadow: 0px 0px 90px 0px rgba(47, 47, 47, 0.1);
+                  box-shadow: 0px 0px 90px 0px rgba(47, 47, 47, 0.1);
+          text-align: center;
+          position: relative;
+          padding: 50px 40px 40px; 
+        }
+
+          .unlimited_possibilities .single_item:before {
+            position: absolute;
+            content: "";
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; 
+        }
+
+          .unlimited_possibilities .single_item:hover:before {
+            background: #ff5a2c; 
+        }
+
+          .unlimited_possibilities .single_item:hover .icon_wrapper i:before {
+            color: #ff5a2c; 
+        }
+
+          .unlimited_possibilities .single_item .icon_wrapper {
+            padding-bottom: 30px; 
+        }
+
+            .unlimited_possibilities .single_item .icon_wrapper i:before {
+              font-size: 60px;
+              color: #092ace;
+              -webkit-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+              margin: 0; 
+            }
+
+          .unlimited_possibilities .single_item .blog_title h3 {
+            font-weight: 700;
+            font-size: 25px;
+            padding: 0px;
+            line-height: 34px;
+         
+        }
+            .unlimited_possibilities .single_item .blog_title h3 a {
+              color: #333146;
+              -webkit-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out; 
+            }
+
+              .unlimited_possibilities .single_item .blog_title h3 a:hover {
+                color: #ff5a2c; 
+            }
+
+          .unlimited_possibilities .single_item .blog_title p {
+            font-size: 15px;
+            font-weight: 300;
+            padding-top: 15px;
+            margin: 0;
+            color: #6a7a83; 
+        }
+    /* end of possibility */
+
+    /* beginin of register area */
+    .register_area {
+        background: transparent url(/assets/images/banner/counter_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background: transparent url(".assets/images/banner/counter_bg.jpg") no-repeat center center/cover; */
+        min-height: 500px;
+        position: relative;
+        padding: 130px 0;
+        z-index: 1; 
+    }
+        .register_area:before {
+          background: transparent;
+          content: "";
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: 0%;
+          width: 100%;
+          z-index: 0; 
+    }
+        .register_area .form-content {
+          padding: 100px 0 0 60px; 
+
+        }
+          .register_area .form-content h2 {
+            font-size: 50px !important;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 70px; 
+
+        }
+          .register_area .form-content p {
+            color: #ffffff;
+            margin: 0;
+            padding-top: 30px; 
+
+        }
+          .register_area .form-content .count_student {
+            margin-top: 70px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; 
+
+        }
+            .register_area .form-content .count_student .single_count {
+              margin-right: 60px;
+              min-width: 150px;
+
+             }
+
+              .register_area .form-content .count_student .single_count:last-child {
+                margin-right: 0; 
+
+            }
+              .register_area .form-content .count_student .single_count span {
+                display: block; 
+
+            }
+              .register_area .form-content .count_student .single_count .counter, .register_area .form-content .count_student .single_count .count_icon {
+                color: #ff5a2c;
+                font-size: 40px;
+                font-weight: 700;
+                padding-bottom: 10px; 
+
+            }
+              .register_area .form-content .count_student .single_count .department_name {
+                color: #ffffff;
+                font-size: 20px;
+                line-height: 40px; 
+
+            }
+                .register_area .form-full-box {
+                background: #ffffff;
+                margin: 0 10% 0px 0;
+                padding: 40px;
+                text-align: center;
+                -webkit-box-shadow: 0px 0px 81px 0px rgba(47, 47, 47, 0.1);
+                  box-shadow: 0px 0px 81px 0px rgba(47, 47, 47, 0.1); 
+            }
+
+          .register_area .form-full-box .form_title {
+            margin-bottom: 40px; 
+        }
+
+            .register_area .form-full-box .form_title h2 {
+              font-size: 36px;
+              line-height: 36px;
+              padding-bottom: 0;
+              font-weight: 700;
+              position: relative; 
+            }
+
+            .register_area .form-full-box .form_title p {
+              padding-top: 15px;
+              font-size: 16px; 
+            }
+
+              .register_area .form-full-box .form_title p span {
+                color: #ff5a2c; 
+            }
+
+          .register_area .form-full-box .register-form {
+            padding: 0; 
+        }
+
+            .register_area .form-full-box .register-form .form-group {
+              margin-bottom: 20px;
+              position: relative; 
+            }
+
+              .register_area .form-full-box .register-form .form-group label {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%); 
+            }
+
+                .register_area .form-full-box .register-form .form-group label i:before {
+                  margin: 0;
+                  color: #d7d7d7;
+                  font-size: 20px; 
+            }
+
+              .register_area .form-full-box .register-form .form-group input, .register_area .form-full-box .register-form .form-group textarea {
+                position: relative;
+                background: transparent;
+                border-bottom: 1px solid  #d7d7d7;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-radius: 0px;
+                -webkit-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0);
+                        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0);
+                height: 80px;
+                padding: 10px 15px 10px 40px;
+                -webkit-transition: all 0.5s ease 0s;
+                transition: all 0.5s ease 0s;
+                width: 100%;
+                color: #333146;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: "Rubik", sans-serif; 
+            }
+
+                .register_area .form-full-box .register-form .form-group input:focus, .register_area .form-full-box .register-form .form-group textarea:focus {
+                  border-color: #092ace;
+                  outline: none;
+                  -webkit-box-shadow: none;
+                          box-shadow: none; 
+            }
+
+                .register_area .form-full-box .register-form .form-group input:-webkit-input-placeholder, .register_area .form-full-box .register-form .form-group textarea:-webkit-input-placeholder {
+                  /* Chrome/Opera/Safari */
+                  color: #333146;
+                  font-size: 16px;
+                  font-weight: 600; 
+            }
+
+                .register_area .form-full-box .register-form .form-group input:-moz-placeholder, .register_area .form-full-box .register-form .form-group textarea:-moz-placeholder {
+                  /* Firefox 19+ */
+                  color: #333146;
+                  font-size: 16px;
+                  font-weight: 600; 
+            }
+
+                .register_area .form-full-box .register-form .form-group input-ms-input-placeholder, .register_area .form-full-box .register-form .form-group textarea-ms-input-placeholder {
+                  /* IE 10+ */
+                  color: #333146;
+                  font-size: 16px;
+                  font-weight: 600; 
+            }
+            
+                .register_area .form-full-box .register-form .form-group input-moz-placeholder, .register_area .form-full-box .register-form .form-group textarea-moz-placeholder {
+                  /* Firefox 18- */
+                  color: #333146;
+                  font-size: 16px;
+                  font-weight: 600; 
+            }
+              .register_area .form-full-box .register-form .form-group textarea {
+                padding-top: 30px; 
+
+            }
+            .register_area .form-full-box .register-form .register-btn-box {
+              padding-top: 20px;
+
+            }
+              .register_area .form-full-box .register-form .register-btn-box .register-btn {
+                background: #092ace;
+                color: white;
+                padding: 0 55px;
+                color: #fff;
+                height: 50px;
+                line-height: 50px;
+                font-size: 16px;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 5px;
+                font-weight: 500;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer; 
+            
+            }
+                .register_area .form-full-box .register-form .register-btn-box .register-btn:hover {
+                  background: #ff5a2c;
+                  color: #ffffff; 
+            }
+    /* end of register area */
+
+    /* beginin of our professors */
+            
+    #instructors_page {
+        padding: 130px 0; 
+    }
+      
+      .our_instructors {
+        padding: 130px 0 80px;
+        background: #ffffff;
+        position: relative;
+        z-index: 1; 
+    }
+
+        .our_instructors .team-single-item {
+          padding: 0 25px;
+          margin-bottom: 50px; 
+        }
+
+          .our_instructors .team-single-item figure {
+            text-align: center;
+            background: #ffffff; 
+        }
+
+            .our_instructors .team-single-item figure:hover .member-img:before {
+              opacity: 0.20; 
+            }
+
+            .our_instructors .team-single-item figure:hover .member-img img {
+              -webkit-transform: scale(1);
+                      transform: scale(1); 
+        }
+
+            .our_instructors .team-single-item figure:hover figcaption .member-name h4 a {
+              color: #ff5a2c; 
+        }
+
+            .our_instructors .team-single-item figure .member-img {
+              /* -webkit-box-shadow: 9px 16px 46px 0px rgba(47, 47, 47, 0.2);
+                      box-shadow: 9px 16px 46px 0px rgba(47, 47, 47, 0.2); */
+              margin: 0px auto; 
+            }
+
+              .our_instructors .team-single-item figure .member-img .teachars_pro {
+                overflow: hidden; 
+            }
+
+                .our_instructors .team-single-item figure .member-img .teachars_pro img {
+                  width: 50%;
+                  -webkit-transform: scale(1.1);
+                          transform: scale(1.1);
+                  -webkit-transition: all 0.3s ease-in-out;
+                  transition: all 0.3s ease-in-out; 
+            }
+
+            #image1{
+              width: 50%;
+              height: 190px;
+              object-fit: cover;          
+            }
+
+            #image3{
+              width: 50%;
+              height: 190px;
+              object-fit: cover;
+
+            }
+
+            .our_instructors .team-single-item figure figcaption {
+              -webkit-transition: all 0.3s ease 0s;
+              transition: all 0.3s ease 0s;
+              width: 100%;
+              text-align: left;
+              position: relative;
+              z-index: 1;
+              margin: -30px 0 0 36px;
+             }
+
+              .our_instructors .team-single-item figure figcaption:before {
+                position: absolute;
+                content: "";
+                background: url(/assets/images/shapes/team_shape.png) no-repeat center center;
+                height: 263px;
+                width: 470px;
+                left: 50%;
+                top: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%); 
+                }
+
+              .our_instructors .team-single-item figure figcaption .member-name {
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                width: 100%;
+                padding: 20px 0 46px 30px;
+                position: relative; 
+            }
+
+                .our_instructors .team-single-item figure figcaption .member-name h4 {
+                  -webkit-transition: all 0.3s ease-in-out;
+                  transition: all 0.3s ease-in-out;
+                  font-size: 25px;
+                  font-weight: 700;
+                  margin: 0;
+                  line-height: 38px; 
+            }
+
+                  .our_instructors .team-single-item figure figcaption .member-name h4 a {
+                    color: #333146;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out; 
+            }
+
+                .our_instructors .team-single-item figure figcaption .member-name span {
+                  -webkit-transition: all 0.3s ease-in-out;
+                  transition: all 0.3s ease-in-out;
+                  font-size: 25px;
+                  font-weight: 400;
+                  color: #6a7a83;
+                  -webkit-transition: all 0.3s ease 0s;
+                  transition: all 0.3s ease 0s;
+                  font-family: "Rubik", sans-serif; 
+            }
+
+    /* end of our professors */
+
+    /* beginin of feq */
+    .faq_about {
+        position: relative;
+        padding: 120px 0; }
+        .faq_about .faq_wrapper {
+          text-align: left;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+        }
+
+          .faq_about .faq_wrapper .single_faq {
+            padding-left: 90px;
+            padding-right: 80px;
+            width: 50%;
+            margin-bottom: 50px; 
+        }
+
+            .faq_about .faq_wrapper .single_faq:last-child {
+              margin-bottom: 0; 
+        }
+
+            .faq_about .faq_wrapper .single_faq h3 {
+              color: #333146;
+              font-weight: 700;
+              font-size: 25px;
+              padding-bottom: 20px;
+              position: relative; 
+        }
+
+              .faq_about .faq_wrapper .single_faq h3 span {
+                -webkit-box-shadow: 0px 0px 81px 0px rgba(47, 47, 47, 0.1);
+                        box-shadow: 0px 0px 81px 0px rgba(47, 47, 47, 0.1);
+                position: absolute;
+                left: -90px;
+                top: -10px;
+                color: #ff5a2c;
+                background: #ffffff;
+                height: 50px;
+                width: 50px;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 50px;
+         }
+    /* end of freq */
+
+    /* beginin of teamgroup */
+    .teamgroup .teamgroup_info_wrapper {
+        padding-bottom: 100px;
+        max-width: 800px;
+        margin: 0px auto;
+        text-align: center; }
+        .teamgroup .teamgroup_info_wrapper h2 {
+          padding-bottom: 50px;
+          font-size: 36px;
+          line-height: 54px; }
+        .teamgroup .teamgroup_info_wrapper .srtarte_btn {
+          background: #ff5a2c;
+          font-family: "Rubik", sans-serif;
+          padding: 0px 45px;
+          line-height: 60px;
+          font-size: 14px;
+          display: inline-block;
+          color: #ffffff;
+          height: 60px;
+          text-transform: uppercase;
+          border: none;
+          border-radius: 5px;
+          font-weight: 500;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer; }
+          .teamgroup .teamgroup_info_wrapper .srtarte_btn:hover {
+            background: #092ace; }
+    /* end of teamgroup */
+
+
+    /* Responsiveness */
+@media only screen and (max-width: 700px){
+
+      /* beginin of about us */
+.about_us {
+  position: relative;
+  padding: 120px 0 0; 
+}
+
+  .about_us .about_title {
+    text-align: left;
+    padding: 100px 0 0; 
+  }
+
+  .about_us .about_banner_down img{
+      display: none;
+  }
+
+  .about_us .banner_about img {
+    /* width: 100%;
+    position: relative;
+    z-index: 2;  */
+    display: none;
+}
+
+    .about_us .about_title span {
+      position: relative;
+      /* padding-left: 110px; */
+      font-size: 14px;
+      font-family: "Rubik", sans-serif;
+      color: #6a7a83; 
+  }
+      .about_us .about_title span:before {
+        position: absolute;
+        content: "";
+        height: 4px;
+        width: 70px;
+        left: 0;
+        top: 10px;
+        background: #ff5a2c; 
+  }
+
+  .about_us .about_title h2 {
+      color: #333146;
+      font-size: 35px;
+      font-weight: bold;
+      line-height: 65px;
+      margin-bottom: 0px;
+      padding-top: 15px;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 2px; 
+  }
+
+  .about_us .banner_about {
+    padding-left: 8%; 
+  }
+    .about_us .banner_about img {
+      width: 80%;
+      position: relative;
+      z-index: 2; 
+  }
+
+  .about_us .about_content_wrapper {
+    margin-top: -20px; 
+  }
+
+    .about_us .about_content_wrapper .about_banner_down {
+      padding: 0 80px; 
+  }
+
+    .about_us .about_content_wrapper .about_content {
+      padding-top: 200px; 
+  }
+
+      .about_us .about_content_wrapper .about_content p {
+        padding-bottom: 20px;
+        margin: 0; 
+      }
+
+      .about_us .about_content_wrapper .about_content a {
+        color: #333146;
+        position: relative;
+        z-index: 1;
+        font-weight: 500;
+        font-family: "Rubik", sans-serif; 
+      }
+
+        .about_us .about_content_wrapper .about_content a:before {
+          position: absolute;
+          content: "";
+          height: 5px;
+          width: 100%;
+          left: 0;
+          bottom: 2px;
+          background: #ff5a2c;
+          opacity: 0.3;
+          z-index: -1;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+       }
+
+        .about_us .about_content_wrapper .about_content a i {
+          position: absolute;
+          top: 2px;
+          right: -30px;
+          visibility: visible;
+          opacity: 1;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          font-size: 16px; 
+      }
+
+        .about_us .about_content_wrapper .about_content a:hover:before {
+          height: 13px;
+       
+      }
+        .about_us .about_content_wrapper .about_content a:hover i {
+          right: -40px;
+          opacity: 0;
+          visibility: hidden;
+       }
+
+/* end of about us */
+
+         /* beginin of feq */
+    .faq_about {
+      position: relative;
+      padding: 120px 0; }
+      .faq_about .faq_wrapper {
+        text-align: left;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+      }
+
+        .faq_about .faq_wrapper .single_faq {
+          padding-left: 90px;
+          padding-right: 80px;
+          width: 100%;
+          margin-bottom: 50px; 
+      }
+
+          .faq_about .faq_wrapper .single_faq:last-child {
+            margin-bottom: 0; 
+      }
+
+          .faq_about .faq_wrapper .single_faq h3 {
+            color: #333146;
+            font-weight: 700;
+            font-size: 25px;
+            padding-bottom: 20px;
+            position: relative; 
+      }
+
+            .faq_about .faq_wrapper .single_faq h3 span {
+              -webkit-box-shadow: 0px 0px 81px 0px rgba(47, 47, 47, 0.1);
+                      box-shadow: 0px 0px 81px 0px rgba(47, 47, 47, 0.1);
+              position: absolute;
+              left: -90px;
+              top: -10px;
+              color: #ff5a2c;
+              background: #ffffff;
+              height: 50px;
+              width: 50px;
+              text-align: center;
+              line-height: 50px;
+              border-radius: 50px;
+       }
+  /* end of freq */
+
+           /* beginin of register area */    
+      .register_area .form-content .count_student .single_count .counter, .register_area .form-content .count_student .single_count .count_icon {
+              color: #ff5a2c;
+              font-size: 30px;
+              font-weight: 700;
+              padding-bottom: 10px; 
+              display: none;
+
+      }
+      .register_area .form-content .count_student .single_count .department_name {
+              color: #ffffff;
+              font-size: 16px;
+              line-height: 40px; 
+              display: none;
+
+      }     
+  /* end of register area */
+
+
+           /* beginin of our professors */
+        
+
+          .our_instructors .team-single-item figure:hover figcaption .member-name h4 a {
+            color: #ff5a2c; 
+      }
+
+            .our_instructors .team-single-item figure .member-img .teachars_pro {
+              overflow: hidden; 
+          }
+
+
+          .our_instructors .team-single-item figure .member-img {
+            /* -webkit-box-shadow: 9px 16px 46px 0px rgba(47, 47, 47, 0.2);
+                    box-shadow: 9px 16px 46px 0px rgba(47, 47, 47, 0.2); */
+            margin: 0px auto; 
+          }
+          .our_instructors .team-single-item figure .member-img .teachars_pro img {
+                width: 50%;
+                -webkit-transform: scale(1.1);
+                        transform: scale(1.1);
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out; 
+          }
+
+          #image1{
+            width: 50%;
+            height: 190px;
+          }
+
+          #image3{
+            width: 50%;
+            height: 190px;
+
+          }
+
+
+          .our_instructors .team-single-item figure figcaption {
+            -webkit-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            width: 60%;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+            margin: -30px 0 0 40px;
+           }
+
+            .our_instructors .team-single-item figure figcaption:before {
+              position: absolute;
+              content: "";
+              background: url(/assets/images/shapes/team_shape.png) no-repeat center center;
+              height: 263px;
+              width: 400px;
+              left: 50%;
+              top: 50%;
+              -webkit-transform: translate(-50%, -50%);
+                      transform: translate(-50%, -50%); 
+              }
+
+            .our_instructors .team-single-item figure figcaption .member-name {
+              -webkit-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+              width: 100%;
+              padding: 20px 0 46px 30px;
+              position: relative; 
+          }
+
+              .our_instructors .team-single-item figure figcaption .member-name h4 {
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                font-size: 18px;
+                font-weight: 700;
+                margin: 0;
+                line-height: 38px; 
+              }
+
+              .our_instructors .team-single-item figure figcaption .member-name span {
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                font-size: 17px;
+                font-weight: 400;
+                color: #6a7a83;
+                -webkit-transition: all 0.3s ease 0s;
+                transition: all 0.3s ease 0s;
+                font-family: "Rubik", sans-serif; 
+          }
+
+  /* end of our professors */
+
+
+
+    }
+      
+
+    @media only screen and (max-width: 900px){
+
+      .register_area .form-content .count_student .single_count .counter, .register_area .form-content .count_student .single_count .count_icon {
+        
+        display: none;
+
+}
+      .register_area .form-content .count_student .single_count .department_name {
+        display: none;
+
+}  
+          
+    }

@@ -1,0 +1,102 @@
+
+
+<div class="container" style="margin-top: 100px;">
+  <div>
+    <h2 style="font-size: 25px;">My Courses</h2>
+  </div>
+
+  <div class="row col-md-d-flex" *ngIf="courses; else allCourses">
+        <div class="card hover mb-2 col-md-3 mx-3" *ngFor="let i = index; let course of courses">
+          <img src={{course.coverImage}} class="card-img-top" style="height: 145px; object-fit: cover;" alt="...">
+          <div class="card-body">
+            <div class="d-flex">
+              <p class="course-title" style="font-weight: 500;">{{course.courseName}} </p>
+              <div class="free d-flex align-items-center justify-content-end">
+                    <!-- <span class="material-symbols-outlined" type="button"  (click)="openDialog('0ms', '0ms')">
+                      edit_square
+                    </span> -->
+                    <span class="material-symbols-outlined" type="button"  [mat-menu-trigger-for]="menu">
+                      edit_square
+                    </span>
+                    <mat-menu #menu = "matMenu">
+                      <button mat-menu-item (click)="viewResourcesDialog(course._id)">View Resources</button>
+                      <button mat-menu-item (click)="openDetailsDialog(course._id)">Edit course details</button>
+                      <!-- <button mat-menu-item (click)="openResourcesDialog(course._id)">Edit course resources</button> -->
+                      <button mat-menu-item (click)="openPriceDialog(course._id)">Edit course price</button>
+                   </mat-menu>
+              </div><br>
+
+            </div>
+              <small class="card-text" style="font-size: 15px;">{{course.courseDescription}}</small>
+              <div class="course-info mt-4">
+                  <div class="row">
+                      <div class="col-6">
+                          <div class="row">
+                              <div class="col-3">
+                                  <mat-icon style="color: orange;">layers</mat-icon>
+                              </div>
+                              <div class="col-9">
+                                  <p>12 sections</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-6">
+                          <div class="row d-flex">
+                              <div class="col-3">
+                                <mat-icon style="color: orange;">access_alarm</mat-icon>
+                            </div>
+                            <div class="col-9">
+                                <p>3 hr 30 min</p>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+        </div>
+        <ng-template #allCourses>
+
+              <div >
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="../../assets/3973481.jpg" alt="" style="object-fit: cover; height:  300px;"> <br>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <p class="mx-auto fw-bold fs-5">You have no courses yet...</p>
+
+                </div>
+              </div>
+          </ng-template>
+          <div class="mt-4">
+            <button mat-mini-fab style="height: 70px; width: 70px; background-color: orange;" routerLink="/user/add-course">
+              <mat-icon>add</mat-icon>
+            </button>
+          </div>
+
+          <!-- <app-edit-courses></app-edit-courses> -->
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+

@@ -1,0 +1,78 @@
+<!-- <h2 mat-dialog-title>{{data.title}}</h2> -->
+<!-- <mat-dialog-actions> -->
+    <!-- <button class="mat-raised-button" >Close</button> -->
+    <!-- <span class="material-symbols-outlined float-right" (click)="close()">close</span> -->
+<!-- </mat-dialog-actions> -->
+
+<mat-dialog-content *ngIf="data.option==1">
+  <mat-progress-bar class="spinner" *ngIf="inprogress"></mat-progress-bar>
+  <h4 class="text-center">Edit Course Details</h4>
+  <form [formGroup]="courseDetails">
+    <div class="form-group mb-2">
+      <label for="">Edit course name</label>
+      <input type="text" class="form-control" formControlName="name">
+    </div>
+    <div class="form-group mb-2">
+      <label for="">Edit course cover image</label>
+      <input type="file" class="form-control" name="coverImage" (change)="onCoverImageChange($event)">
+    </div>
+    <div class="form-group mb-2">
+      <label for="">Edit course description</label>
+      <input type="text" class="form-control" formControlName="description">
+    </div>
+    <div class="form-group">
+      <button class="mat-raised-button" style="background-color: orange;" (click)="saveCourse()">Save Changes</button>
+    </div>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-content *ngIf="data.option==4 && resourceId==''" class="resources">
+  <span class="text-center text-danger">{{message}}</span>
+  <div class="d-md-flex"></div>
+  <div *ngFor="let resource of resources" class="d-flex">
+    <div class="">
+      <span class="m-2 fw-bold">{{resource.resourceName}}</span> <br>
+      <small class="type">{{resource.resourceType}}</small>
+    </div>
+    <div>
+      <span class="material-symbols-outlined" type="button" (click)="editResource(resource._id)">
+        edit_square
+      </span>
+    </div>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-content *ngIf="resourceId">
+  <h4 class="text-center">Edit Resource</h4>
+  <span>{{message}}</span>
+  <mat-progress-bar class="spinner" *ngIf="inprogress"></mat-progress-bar>
+
+  <form [formGroup]="resourceDetails">
+    <div class="form-group mb-2">
+      <label for="">Edit resource name</label>
+      <input type="text" class="form-control" formControlName="name">
+    </div>
+    <div class="form-group mb-2">
+      <label for="">Edit resource file</label>
+      <input type="file" class="form-control" name="resourceFile" (change)="onResourceFileChange($event)">
+    </div>
+    
+    <div class="form-group">
+      <button class="mat-raised-button" style="background-color: orange;" (click)="saveResource()">Save Changes</button>
+    </div>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-content *ngIf="data.option==3">
+  <mat-progress-bar class="spinner" *ngIf="inprogress"></mat-progress-bar>
+  <h4 class="text-center">Edit Course Price</h4>
+  <form [formGroup]="priceDetails">
+    <div class="form-group mb-2">
+      <label for="">Edit course price</label>
+      <input type="text" class="form-control" formControlName="price">
+    </div>
+    <div class="form-group">
+      <button class="mat-raised-button" style="background-color: orange;" (click)="savePrice()">Save Changes</button>
+    </div>
+  </form>
+</mat-dialog-content>

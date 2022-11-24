@@ -1,0 +1,62 @@
+<div class="grid-container">
+  <h1 class="mat-h1">My Profile</h1>
+
+  <mat-stepper linear #stepper class="container">
+      <mat-step [stepControl]="" >
+        <mat-progress-bar mode="indeterminate" *ngIf="loading" class="d-none d-md-block" style="width: 649px; margin-left: -12px; height: 3px;"></mat-progress-bar>
+        <mat-progress-bar mode="indeterminate" *ngIf="loading" class="d-block d-md-none" style="width: 412px; margin-left: -12px; height: 3px;"></mat-progress-bar>
+          <ng-template matStepLabel style="background-color: orange !important;">Profile Details</ng-template>
+          <div class="col-md-6">
+            <label for="FirstName" class="form-label">First Name</label>
+            <hr>
+            <h6 class="" style="font-size: 20px;" *ngIf="user">{{user.firstname}}</h6>
+            <hr>
+            <label for="LastName" class="form-label">Last Name</label>
+            <hr>
+            <h6 class="" style="font-size: 20px;" *ngIf="user">{{user.lastname}}</h6>
+            <hr>
+            <label for="Email" class="form-label">Email</label>
+            <hr>
+            <h6 class="" style="font-size: 20px;" *ngIf="user">{{user.email}}</h6>
+            <hr>
+            <label for="Mobile Number" class="form-label">Mobile Number</label>
+            <hr>
+            <h6 class="" style="font-size: 20px;" *ngIf="user">{{user.mobilenumber}}</h6>
+            <hr>
+            <label for="Username" class="form-label">Username</label>
+            <hr>
+            <h6 class="" style="font-size: 20px;" *ngIf="user">{{user.username}}</h6>
+             <button mat-button  class="btn btn-warning text-white">Edit</button>
+
+          </div>
+      </mat-step>
+
+      <!-- stage two -->
+
+      <mat-step [stepControl]="">
+
+          <ng-template matStepLabel>Courses</ng-template>
+
+
+            </mat-step>
+
+
+
+
+
+      <!-- stage three -->
+      <mat-step>
+        <ng-template matStepLabel>Others</ng-template>
+
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <!-- <button mat-button (click)="thirdStep()">Submit</button> -->
+        </div>
+      </mat-step>
+    <!-- </mat-stepper> -->
+
+
+
+
+
+

@@ -1,0 +1,134 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-nav-list class="pt-5">
+      <div align="center" class="mb-5">
+        <img src="../../assets/2048px-Angular_full_color_logo.svg.png" class="company-logo" alt="company-logo">
+        <h4 class="company-name-side-nav">Easy Learn</h4>
+        <span class="fw-bold" style="font-size: 20px;" *ngIf="user">{{user.username}}</span>
+      </div>
+
+      <!-- GENERAL -->
+      <div class="general">
+        <h4 class="general-text">General</h4>
+
+        <a mat-list-item class="text-white" routerLink="/user/dashboard">
+          <mat-icon>dashboard</mat-icon>
+          <span class="nav-list-text">Dashboard</span>
+        </a>
+      </div>
+
+      <!-- PROFILE -->
+      <div class="profile mt-2">
+        <h4 class="general-text">Profile</h4>
+
+        <a mat-list-item class="text-white" routerLink="/user/profile">
+          <mat-icon>account_box</mat-icon>
+          <span class="nav-list-text">My profile</span>
+        </a>
+
+        <a mat-list-item class="text-white" routerLink="/user/changepassword">
+          <mat-icon>lock</mat-icon>
+          <span class="nav-list-text">Change password</span>
+        </a>
+      </div>
+
+      <!-- Academics -->
+      <div class="profile mt-2">
+        <h4 class="general-text">Academics</h4>
+
+        <a mat-list-item class="text-white"routerLink="/user/enroll">
+          <mat-icon>school</mat-icon>
+          <span class="nav-list-text">Enroll for a course</span>
+        </a>
+
+        <a mat-list-item class="text-white" routerLink="/user/my-courses">
+          <mat-icon>note_add</mat-icon>
+          <span class="nav-list-text">My Courses</span>
+        </a>
+        <!-- <span class="material-symbols-outlined">
+          shopping_cart
+          </span> -->
+
+        <a mat-list-item class="text-white" routerLink="/user/cart">
+          <mat-icon>shopping_cart</mat-icon>
+          <span class="nav-list-text">My cart</span>
+        </a>
+      </div>
+
+
+
+
+
+      <!-- Payments -->
+
+      <div class="profile mt-2">
+        <h4 class="general-text">Payments</h4>
+
+
+        <a mat-list-item class="text-white" routerLink="/user/payment">
+          <mat-icon>payment</mat-icon>
+          <span class="nav-list-text">payment</span>
+        </a>
+
+        <a mat-list-item class="text-white" routerLink="">
+          <mat-icon>payment</mat-icon>
+          <span class="nav-list-text">Withdraw</span>
+        </a>
+
+        <a mat-list-item class="text-white" routerLink="">
+          <mat-icon>history</mat-icon>
+          <span class="nav-list-text">Transaction History</span>
+        </a>
+      </div>
+
+      <!-- Others -->
+      <div class="profile mt-2">
+        <h4 class="general-text">Others</h4>
+
+        <a mat-list-item class="text-white">
+          <mat-icon>help</mat-icon>
+          <span class="nav-list-text">Help</span>
+        </a>
+
+        <a mat-list-item class="text-white" routerLink="/home">
+          <mat-icon>home</mat-icon>
+          <span class="nav-list-text">Home</span>
+        </a>
+
+        <a mat-list-item class="text-white" routerLink="/user/add-course">
+          <mat-icon>account_box</mat-icon>
+          <span class="nav-list-text">Logout</span>
+        </a>
+      </div>
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="shadow-sm position-fixed">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>
+          <!-- <mat-form-field> -->
+
+            <input matInput placeholder="Search here" class="rounded-1 w-100 search-inp">
+            <button mat-icon-button matSuffix class="">
+              <mat-icon>search</mat-icon>
+            </button>
+            <!-- <label *ngIf="user">Welcome {{user.username}}</label> -->
+          <!-- </mat-form-field> -->
+      </span>
+
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

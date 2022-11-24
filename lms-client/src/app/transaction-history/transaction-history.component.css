@@ -1,0 +1,21 @@
+.mat-h1 {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+
+.histroy-tb {
+    height: 400px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+/* .example-container {
+    height: 400px;
+    overflow: auto;
+} */
+  
+  table {
+    width: 100%;
+}
+  

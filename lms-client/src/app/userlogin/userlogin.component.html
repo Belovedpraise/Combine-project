@@ -1,0 +1,57 @@
+<app-navbar></app-navbar>
+  <div class="grid-container container">
+    <div class="container w-100 shadow-sm">
+      <div class="row">
+        <div class="col-6 d-none d-md-block image-col">
+
+        </div>
+        <div class="col-12 col-md-6">
+          <mat-progress-bar mode="indeterminate" *ngIf="loading" class="d-none d-md-block" style="width: 649px; margin-left: -12px; height: 3px;"></mat-progress-bar>
+          <mat-progress-bar mode="indeterminate" *ngIf="loading" class="d-block d-md-none" style="width: 412px; margin-left: -12px; height: 3px;"></mat-progress-bar>
+          <div class="container p-4">
+            <h1 class="register-h1">Login</h1>
+            <div class="w-25" style="border: 1px solid rgb(255,90,44); margin-top: -2px; color: rgb(255,90,44);"></div>
+            <form class="row g-3 mt-4" [formGroup]="loginForm">
+
+              <div class="col-md-12">
+                <label class="pb-2 inp-label" for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email address" class="form-control" formControlName="email">
+              </div>
+
+              <div class="col-md-12 mt-3">
+                <label class="pb-2 inp-label" for="password">Password</label>
+                <!-- <input > -->
+                <div class="input-group col-md-4">
+                  <input type="password" id="password" name="password" placeholder="Password" class="form-control" formControlName="password" [type]="hide ? 'password' : 'text'">
+                  <span class="input-group-append">
+                      <button mat-icon-button style="margin-left: -40px; z-index: 10000;" (click)="hide = !hide" [attr.arial-label]="'Hide password'" [attr.aria-pressed]="hide">
+                         <mat-icon *ngIf="hide">visibility_off</mat-icon>
+                         <mat-icon *ngIf="!hide">visibility</mat-icon>
+                      </button>
+                    </span>
+              </div>
+              </div>
+
+              <div align="center" class="mt-4">
+                <button mat-button class="register-btn text-white" (click)="login()" [disabled]="loginForm.invalid || loading">Login</button>
+                
+                <p class="pt-3">
+                  <a routerLink="/signup" style="color: rgb(14, 26, 87);" class="nav-link">Don't have an account?</a>
+                </p>
+              </div>
+
+              <div *ngIf="passwordErr" class="alert alert-danger alert-dismissible fade show" role="alert">
+                {{passwordErrMsg}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div *ngIf="userNotExist" class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{userNotExistErrMsg}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>

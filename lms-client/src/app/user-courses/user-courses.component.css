@@ -1,0 +1,45 @@
+.grid-container {
+    margin: 20px;
+    margin-top: 70px;
+  }
+
+.mat-h1 {
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 35px;
+}
+
+.hover {
+    /* height: 300px; */
+    transition-duration: .1s;
+    transition-timing-function: ease-in;
+    /* width: 21rem; */
+}
+
+.hover:hover {
+    /* height: 320px; */
+    box-shadow: 20px 0px 40px 10PX #e9e9e9;
+}
+
+.courses-card {
+    width: 1000px;
+    max-height: 590px;
+    overflow: auto;
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: 450;
+}
+.free{
+  /* background-color: rgb(9,42,206);
+  width: 30%; */
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  /* position: absolute; */
+  /* float: right; */
+  /* margin: 51% 0 0 0; */
+
+}

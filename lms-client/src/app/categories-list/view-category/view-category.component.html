@@ -1,0 +1,44 @@
+<div class="container-fluid" style="margin-top: 100px;">
+  <app-navbar></app-navbar>
+  <div>
+    <h2 style="font-size: 25px;">{{name}} Courses</h2>
+  </div>
+  <div class="row" >
+    <div class="col-md-d-flex">
+      <div class="col-md-3">
+        <div class="card hover" *ngFor="let i = index; let course of courses">
+          <img src={{course.coverImage}} class="card-img-top" style="height: 145px; object-fit: cover;" alt="...">
+          <div class="card-body">
+              <p class="course-title">{{course.courseName}} </p>
+              <small class="card-text">{{course.courseDescription}}</small>
+              <div class="course-info mt-4">
+                  <div class="row">
+                      <div class="col-6">
+                          <div class="row">
+                              <div class="col-3">
+                                  <mat-icon style="color: orange;">layers</mat-icon>
+                              </div>
+                              <div class="col-9">
+                                  <p>12 sections</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-6">
+                          <div class="row d-flex">
+                              <div class="col-3">
+                                  <!-- <mat-icon style="color: orange;">access_alarm</mat-icon> -->
+                              </div>
+                              <div class="col-9">
+                                <button class="btn btn-sm text-light" style="background-color: orange" (click)="addToCart(course)">Add to Cart</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

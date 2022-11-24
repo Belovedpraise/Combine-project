@@ -1,0 +1,28 @@
+/* .categories {
+    background-color: #eee !important;
+} */
+
+.hover {
+    height: 17rem;
+    width: 17rem;
+    background-color: rgb(217, 214, 214) !important;
+    cursor: pointer;
+}
+
+.card-image {
+    height: 80%; 
+    width: 80%;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+}
+
+.hover:hover .card-image {
+    height: 82%;
+    width: 82%;
+}
+
+span button {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+}

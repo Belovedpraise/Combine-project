@@ -1,0 +1,51 @@
+.grid-container {
+  margin: 20px;
+  margin-top: 70px;
+}
+
+.mat-stepper-horizontal {
+  margin-top: 8px;
+}
+
+.mat-form-field {
+  margin-top: 16px;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+/* .add-course-card {
+  max-height: 580px;
+  overflow: auto;
+}
+
+.mat-h1 {
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+
+.radio-button {
+  margin: 5px;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(179, 177, 177);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: rgb(100, 100, 100);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: rgb(68, 68, 68);
+  border-radius: 10px;
+} */

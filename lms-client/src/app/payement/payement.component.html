@@ -1,0 +1,44 @@
+<div class="container" style="margin-top:70px ;">
+<div class="col-md-12">
+  <label class="pb-2 inp-label" for="email">Email Address</label>
+  <input type="email" id="email" name="email" placeholder="Email address" class="form-control"  [(ngModel)]="email">
+
+  <label class="pb-2 inp-label" for="amount">Amount</label>
+  <input type="amount" id="amount" name="amount" placeholder="Amount" class="form-control"  [(ngModel)]="amount">
+</div>
+</div>
+<!-- <button class="btn btn-info" (click)="paystack()">AddPayment</button>  -->
+
+  <angular4-paystack
+[email]="email"
+[amount]="amount"
+[ref]="reference"
+[channels]="['bank']"
+[class]="'btn btn-primary'"
+(onClose)="paymentCancel()"
+(callback)="paymentDone($event)"
+>
+Pay with Paystack
+</angular4-paystack>
+
+
+
+
+
+
+
+
+<!-- <button
+angular4-paystack
+[key]="'pk_test_xxxxxxxxxxxxxxxxxxxxxxx'"
+[email]="'mailexample@mail.com'"
+[amount]="5000000"
+[ref]="reference"
+[class]="'btn btn-primary'"
+(paymentInit)="paymentInit()"
+(onClose)="paymentCancel()"
+(callback)="paymentDone($event)"
+>
+Pay with Paystack
+</button>  -->
+

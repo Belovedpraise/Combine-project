@@ -1,0 +1,105 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.footer_3{
+  height: 550px;
+  background-image: url(/assets/images/shapes/waves.png);
+  background-color: rgb(17,27,80);
+}
+
+.footer_3 .become_instractor .sub_title{
+  margin-top: 80px;
+}
+
+.footer_3 .become_instractor .sub_title h2{
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer_3 .become_instractor .sub_title p{
+  font-size: 12px;
+  color: white;
+}
+
+.envent_all_view a{
+  background-color: rgb(196,77,44);
+  padding: 12px;
+  float: right;
+  margin-top: -70px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.envent_all_view a:hover{
+  background-color: rgb(21, 34, 100);
+  transition: all 0.5s 0s;
+}
+
+hr{
+  background-color: white;
+}
+
+.footer_single_col p{
+  font-size: 13px;
+  color: white;
+}
+
+.footer_single_col h3{
+    font-size: 23px;
+    color: white;
+}
+
+.quick_inf0 li{
+  list-style-type: none;
+}
+
+.quick_inf0 li a{
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.contact_info span{
+  color: white;
+}
+
+.contact_info .email{
+  padding-left: 10px;
+  color: rgb(196,77,44);
+}
+
+
+@media only screen and (max-width: 700px){
+  .footer_3{
+    height: 1200px;
+    background-image: url(/assets/images/shapes/waves.png);
+    background-color: rgb(17,27,80);
+  }
+
+  .envent_all_view a{
+    background-color: rgb(196,77,44);
+    padding: 12px;
+    float: right;
+    margin-top: -70px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin-top: 60px;
+  }
+  
+  .envent_all_view a:hover{
+    background-color: rgb(9,42,206);
+    transition: all 0.5s 0s;
+  }
+}
+
+
+@media only screen and (max-width: 900px){
+  .footer_3{
+    height: 1200px;
+    background-image: url(/assets/images/shapes/waves.png);
+    background-color: rgb(17,27,80);
+  }
+}
